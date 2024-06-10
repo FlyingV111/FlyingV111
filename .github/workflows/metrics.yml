@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
           # Options
-          user: AndreBogner
+          user: FlyingV111
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Berlin
