@@ -1,7 +1,5 @@
-## Hi there 👋
-
 <!--
-**FlyingV111/FlyingV111** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**AndreBogner/AndreBogner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -14,3 +12,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<p align="center"><img src="/github-metrics.svg" alt="Metrics" ></p>
