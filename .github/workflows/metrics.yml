@@ -1,10 +1,11 @@
 name: Metrics
 on:
-  # Schedule updates (each hour)
-  schedule: [{cron: "0 0 * * *"}]
-  # Lines below let you run workflow manually and on each commit
+  # Schedule updates (jede Stunde)
+  schedule: [{cron: "0 * * * *"}]
+  # Lässt den Workflow manuell und bei JETZEM Push auf JEDEN Branch ausführen
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push:
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -24,10 +25,10 @@ jobs:
           base: header, activity, repositories
           config_timezone: Europe/Berlin
 
-          # Language Icons
+          # Language Icons / Topics
           plugin_topics: yes
-          plugin_topics_mode: 'mastered'
-          plugin_topics_sort: 'activity'
+          plugin_topics_mode: star
+          plugin_topics_sort: activity
           plugin_topics_limit: 12
 
           # Languages
@@ -41,7 +42,6 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-
 
           # Introduction
           plugin_introduction: yes
